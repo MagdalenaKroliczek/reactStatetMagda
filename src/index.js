@@ -5,6 +5,8 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App";
 import Compteurs from "./components/Compteurs";
+import Selecteurs from "./components/Selecteurs";
+import Configurateur from "./components/Configurateur";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -12,9 +14,10 @@ ReactDOM.render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="compteurs" element={<Compteurs />} />
+        <Route path="selecteurs" element={<Selecteurs />} />
+        <Route path="configurateur" element={<Configurateur />} />
       </Routes>
     </BrowserRouter>
-    ,
   </React.StrictMode>,
   document.getElementById("root")
 );
